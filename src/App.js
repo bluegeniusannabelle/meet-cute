@@ -11,7 +11,13 @@ class App extends Component {
     componentDidMount() {
         // Configure and initialise Firebase
         const firebaseConfig = {
-            
+            apiKey: "<api-key>",
+            authDomain: "<app-name>.firebaseapp.com",
+            databaseURL: "https://<app-name>.firebaseio.com",
+            projectId: "<app-name>",
+            storageBucket: "<app-name>.appspot.com",
+            messagingSenderId: "xxxxxx",
+            appId: "1:xxxxxx:web:xxxxxx"
         };
         console.log(firebaseConfig);
         firebase.initializeApp(firebaseConfig);
